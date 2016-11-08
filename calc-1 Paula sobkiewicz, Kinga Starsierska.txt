@@ -1,0 +1,50 @@
+Punkt wejœciowy programu
+wartoœæ na ekranie = 0
+liczba A = pusta zmienna
+liczba B = pusta zmienna
+pamiêæ = pusta zmienna
+typ dzia³ania = pusta zmienna
+
+PÊTLA {
+	jeœli u¿ytkownik wciœnie ESC, to wyjdŸ z pêtli
+	wyœwietl wartoœæ na ekranie
+	
+	wczytaj kolejn¹ instrukcjê
+	
+	w zale¿noœci od wprowadzonej komendy 
+	{
+		jeœli(komenda jest liczb¹)
+		{			
+			jeœli(liczba A jest pusta) liczba A = komenda
+			w przeciwnym razie liczba B = komenda
+			
+			wartoœæ na ekranie = komenda
+			wyœwietl wartoœæ na ekranie			}
+		jeœli(komenda to instrukcja)
+		{
+			jeœli(instrukcja to M+) pamiêæ = wartoœæ na ekranie
+			w przeciwnym wypadku jeœli(instrukcja to MR) wartoœæ na ekranie = komenda
+			w przeciwnym wypadku jeœli(instrukcja to MC) pamiêæ = pusta
+			w przeciwnym wypadku jeœli(instrukcja to +) typ dzia³ania = +
+			w przeciwnym wypadku jeœli(instrukcja to -) typ dzia³ania = -
+			w przeciwnym wypadku jeœli(instrukcja to *) typ dzia³ania = *
+			w przeciwnym wypadku jeœli(instrukcja to %) typ dzia³ania = %
+		}
+		jeœli(komenda to ENTER)
+		{			
+			wyœwietl wynik operacji na liczba A oraz liczba B w oparciu o typ dzia³ania
+		}
+	}
+		
+		liczba A = pusta
+		liczba B = pusta
+	
+}
+     {    watoœæ na ekranie= komenda
+	wyœwietl wartoœæ na ekranie
+ 			jeœli cofn¹æ to backspace (instrukcja to backspace) 
+			 usun¹æ ostatni znak waroœci na ekranie (wyœwietl)
+				mo¿na powtarzaæ 
+					gdy wartoœæ na ekranie usuniêta do koñca
+						wyœwietl 0	}
+Zamknij program
